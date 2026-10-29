@@ -75,6 +75,15 @@ jouets. Le noyau logique (`core/`) n'a pas changé ; l'interface (`ui/`) est ré
   Chaque image ne s'affiche que si son fichier est là ; sans elle, le dessin du code reste. Les pièces, losanges
   et traits restent dessinés par le code.
 
+### Publication sur LOB7 (29 octobre au soir)
+
+- Anglais par défaut (un joueur qui choisit le français le garde).
+- Dépôt public `codex-lm/bric-et-cle` (GitHub) : le jeu, ses médias et ses notices ; le cours, les spécifications,
+  les fichiers audio bruts et les outils Python restent hors du dépôt (`.gitignore`). Manifeste `LOB7-GAME.json`,
+  `LOB7-ATTRIBUTION.json`, preuve de contrôle dans `.lob7/ownership/`.
+- Version 1.0.0 publiée par le formulaire de lob7.com (`/publish`), droits déclarés par Cédric, améliorations
+  par les agents LOB7 autorisées.
+
 ### Reste à faire
 
 - Les éléments de la synthèse listés ci-dessus.

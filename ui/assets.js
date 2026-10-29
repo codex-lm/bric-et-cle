@@ -28,21 +28,5 @@ export function figurine(ref, cls = 'figurine') {
 }
 
 // ---------------------------------------------------------------- formes des lettres en notation (mode Aa, éditeur)
-const FORMES = [
-  '<circle cx="5" cy="5" r="5"/>',
-  '<rect width="10" height="10"/>',
-  '<path d="M5 0L10 10H0z"/>',
-  '<path d="M5 0L10 5L5 10L0 5z"/>',
-  '<path d="M2.5 0h5L10 5l-2.5 5h-5L0 5z"/>',
-  '<path d="M5 0l1.5 3.5L10 4l-2.7 2.4L8 10 5 8 2 10l.7-3.6L0 4l3.5-.5z"/>',
-  '<path d="M3.5 0h3v3.5H10v3H6.5V10h-3V6.5H0v-3h3.5z"/>',
-  '<path d="M0 10A5 5 0 0 1 10 10z"/>',
-  '<path d="M5 0l5 3.6-1.9 6.4H1.9L0 3.6z"/>',
-  '<rect width="10" height="5" y="2.5"/>',
-  '<path d="M0 0h10L5 10z"/>',
-  '<circle cx="5" cy="5" r="5"/><circle cx="5" cy="5" r="2" fill="#fff"/>',
-];
-export function formeCSS(i) {
-  const svg = `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'>${FORMES[i % FORMES.length]}</svg>`;
-  return `url("data:image/svg+xml,${encodeURIComponent(svg)}")`;
-}
+// Douze formes, un fichier SVG chacune dans assets/formes (LOB7 refuse les URL au schéma « data »).
+export const formeCSS = (i) => `url("assets/formes/forme_${String(i % 12).padStart(2, '0')}.svg")`;
