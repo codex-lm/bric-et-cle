@@ -81,8 +81,13 @@ jouets. Le noyau logique (`core/`) n'a pas changé ; l'interface (`ui/`) est ré
 - Dépôt public `codex-lm/bric-et-cle` (GitHub) : le jeu, ses médias et ses notices ; le cours, les spécifications,
   les fichiers audio bruts et les outils Python restent hors du dépôt (`.gitignore`). Manifeste `LOB7-GAME.json`,
   `LOB7-ATTRIBUTION.json`, preuve de contrôle dans `.lob7/ownership/`.
-- Version 1.0.0 publiée par le formulaire de lob7.com (`/publish`), droits déclarés par Cédric, améliorations
-  par les agents LOB7 autorisées.
+- Version 1.0.0 publiée le 30 octobre par le formulaire de lob7.com (`/publish`), droits déclarés par Cédric,
+  améliorations par les agents LOB7 autorisées. Les quatre contrôles passent (malware, licences, démarrage,
+  analyse statique). Page du jeu : https://lob7.com/games/bg_s_97f72b48-3c05-4d1f-bfaf-8edee52d8ab4
+- Règles de LOB7 apprises en route (chaque refus coûte une préparation) : pas de fichier `.py` ; pas d'URL au schéma
+  « data » (ni dans le HTML ni ailleurs, par prudence) ; dans tout fichier JS publié, tests compris, pas d'import
+  dynamique ni d'import non relatif (`node:fs`…) ; et tout chemin de fichier écrit dans un JS doit se résoudre par
+  rapport à ce fichier JS (d'où `new URL('../levels/chapitre1.json', import.meta.url)`).
 
 ### Reste à faire
 
