@@ -163,7 +163,7 @@ export function fenetreReglages(app) {
     <div class="rangee"><label>${t('reg.musique')}</label>${curseur('musique', t('reg.musique'), Math.round(r.musique * 100))}</div>
     <div class="rangee"><label>${t('reg.bruitages')}</label>${curseur('bruitages', t('reg.bruitages'), Math.round(r.bruitages * 100))}</div>
     <h3>${t('reg.sauvegarde')}</h3>
-    <div class="rangee"><button class="btn secondaire" data-a="exporter">${t('reg.exporter')}</button><button class="btn secondaire" data-a="importer">${t('reg.importer')}</button><button class="btn secondaire danger" data-a="effacer">${t('reg.effacer')}</button><input type="file" accept="application/json,.json" class="cache"></div>
+    <div class="rangee"><button class="btn secondaire" data-a="exporter">${t('reg.exporter')}</button><button class="btn secondaire" data-a="importer">${t('reg.importer')}</button><button class="btn secondaire danger" data-a="effacer">${t('reg.effacer')}</button><input type="file" accept="application/json" class="cache"></div>
     <h3>${t('reg.clavier')}</h3><p class="aide-clavier">${t('reg.clavierAide')}</p>`;
   const f = fenetre(html);
   f.el.addEventListener('click', (e) => {

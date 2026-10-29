@@ -49,14 +49,14 @@ document.addEventListener('visibilitychange', () => {
   if (document.hidden) ctx.suspend(); else ctx.resume();
 });
 
-const fichier = (nom) => `assets/audio/${nom}.${ext}`;
+const fichier = (nom, e = ext) => new URL(`../assets/audio/${nom}.${e}`, import.meta.url).href;
 
 async function charger(nom) {
   if (tampons.has(nom)) return tampons.get(nom);
   const p = (async () => {
     if (!aAudio(`${nom}.${ext}`) && !aAudio(`${nom}.mp3`)) return null;
     try {
-      const r = await fetch(aAudio(`${nom}.${ext}`) ? fichier(nom) : `assets/audio/${nom}.mp3`);
+      const r = await fetch(aAudio(`${nom}.${ext}`) ? fichier(nom) : fichier(nom, 'mp3'));
       return await ctx.decodeAudioData(await r.arrayBuffer());
     } catch { return null; }
   })();
@@ -136,7 +136,7 @@ export function jouerMusique(nom, force = false) {
   if (!force && piste.nom === nom) return;
   arreterMusique();
   if (!nom || !(aAudio(`${nom}.${ext}`) || aAudio(`${nom}.mp3`))) return;
-  const src = aAudio(`${nom}.${ext}`) ? fichier(nom) : `assets/audio/${nom}.mp3`;
+  const src = aAudio(`${nom}.${ext}`) ? fichier(nom) : fichier(nom, 'mp3');
   const elements = [0, 1].map(() => {
     const a = new Audio(src);
     a.preload = 'auto';

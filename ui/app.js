@@ -17,6 +17,7 @@ import { svgObjet } from './objet/rendu.js';
 
 const CLE = 'bric-et-cle-v1';
 const ANCIENNE_CLE = 'grande-feuille-v1';
+const NOM_EXPORT = 'bric-et-cle-sauvegarde';
 const REGLAGES_DEFAUT = { langue: 'en', theme: 'clair', daltonien: '0', vitesse: '1', texte: 100, volume: 0.8, musique: 0.5, bruitages: 0.85, sens: 'cours', notation: false, muet: false };
 
 const S = {
@@ -132,7 +133,7 @@ const API = {
     const blob = new Blob([JSON.stringify(S.sv, null, 1)], { type: 'application/json' });
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    a.download = 'bric-et-cle-sauvegarde.json';
+    a.download = `${NOM_EXPORT}.json`;
     a.click();
     setTimeout(() => URL.revokeObjectURL(a.href), 1000);
   },
@@ -552,7 +553,7 @@ async function demarrer() {
   appliquerReglages();
   await chargerManifeste();
   habiller();
-  const r = await fetch('levels/chapitre1.json');
+  const r = await fetch(new URL('../levels/chapitre1.json', import.meta.url));
   S.json = await r.json();
   S.chap = preparerChapitre(S.json);
   for (const n of S.chap.niveaux) n.capsulesInitiales = [];
