@@ -10,6 +10,7 @@ __pycache__/
 *.log
 .DS_Store
 Thumbs.db
-# Outils de développement (génération audio, pilote d'Edge, vérification de syntaxe) : LOB7 refuse les
-# scripts Python, les sous-processus et les imports dynamiques dans les fichiers publiés.
+# Tests et outils de développement (génération audio, pilote d'Edge, vérification de syntaxe) : LOB7 n'accepte
+# dans l'édition publiée que des modules aux imports relatifs, sans Python, Node, sous-processus ni import dynamique.
+tests/
 tools/

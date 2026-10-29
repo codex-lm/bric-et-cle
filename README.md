@@ -31,7 +31,9 @@ puis ouvrir <http://localhost:8123>. Résolution conseillée 1440 × 900, minimu
 node tests/run.mjs
 ```
 
-53 tests, plus la vérification de syntaxe de tous les modules (`node tools/verifier-syntaxe.mjs`, outil local). Le noyau d'abord : analyse, substitution simultanée, modus ponens et diagnostics, boîtes, capsules,
+53 tests, plus la vérification de syntaxe de tous les modules (`node tools/verifier-syntaxe.mjs`). Les tests et
+les outils restent dans le dossier de développement, hors de l'édition publiée sur LOB7, qui n'accepte que des
+modules de navigateur aux imports relatifs. Le noyau d'abord : analyse, substitution simultanée, modus ponens et diagnostics, boîtes, capsules,
 journal et annulation, sauvegarde ; chaque solution de référence est rejouée, vérifiée, comptée, puis **dépliée
 jusqu'aux axiomes, débarrassée de la substitution et relue par le vérificateur indépendant** (portage de
 l'annexe B). Puis l'atelier :
