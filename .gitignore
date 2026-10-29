@@ -10,5 +10,6 @@ __pycache__/
 *.log
 .DS_Store
 Thumbs.db
-# Outils Python de développement : LOB7 n'accepte que les fichiers du jeu.
-tools/*.py
+# Outils de développement (génération audio, pilote d'Edge, vérification de syntaxe) : LOB7 refuse les
+# scripts Python, les sous-processus et les imports dynamiques dans les fichiers publiés.
+tools/

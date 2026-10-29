@@ -1,6 +1,5 @@
 // Tests du noyau : node tests/run.mjs
-import { readFileSync, readdirSync } from 'node:fs';
-import { execFileSync } from 'node:child_process';
+import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { parse, texte, ascii, lettre, nom, non, ou, imp, lettres, essayerParse, nd, en, estImp, taille } from '../core/formula.js';
 import { substituer } from '../core/subst.js';
@@ -11,6 +10,9 @@ import { preparerChapitre, jouer, contexte, preuve, versSolution, definirPreuveJ
 import { formulesNouvelles, etoiles } from '../core/score.js';
 import { etatDepuis, effectifs } from '../core/journal.js';
 import { replier, reconstruire } from '../core/capsules.js';
+import { poser, lire } from '../ui/objet/pose.js';
+import { svgObjet } from '../ui/objet/rendu.js';
+import { gesteEchangeur, gesteCle, gesteDuplicateur, gesteAutomate } from '../ui/gestes.js';
 
 let ok = 0, ko = 0;
 function test(nomTest, fn) {
@@ -266,7 +268,6 @@ test('rejouer un journal reconstruit la même feuille ; annuler ajoute un évén
 
 console.log('Objets (pose et relecture)');
 {
-  const { poser, lire } = await import('../ui/objet/pose.js');
   const chap = preparerChapitre(json);
   // Toutes les formules du chapitre : axiomes, théorèmes, cibles et lignes des solutions de référence.
   const formules = new Set(Object.values(AXIOMES));
@@ -307,7 +308,6 @@ console.log('Objets (pose et relecture)');
       egal(p.els.filter((e) => e.sorte === 'trait').length, chemins(f).filter((c) => nd(en(f, c)).k === 'N').length - imps, 'traits ' + texte(f));
     }
   });
-  const { svgObjet } = await import('../ui/objet/rendu.js');
   test('le dessin distingue les indices (R₁ et R₂) sans lire les attributs cachés', () => {
     const visible = (f) => svgObjet({ f }).replace(/ data-[a-z]+="[^"]*"/g, '');
     vrai(visible(P('R1 -> R2')) !== visible(P('R2 -> R1')), 'R₁ → R₂ et R₂ → R₁ se dessinent pareil');
@@ -324,7 +324,6 @@ console.log('Objets (pose et relecture)');
 
 console.log('Gestes de l\'atelier');
 {
-  const { gesteEchangeur, gesteCle, gesteDuplicateur, gesteAutomate } = await import('../ui/gestes.js');
   const chap = preparerChapitre(json);
   // Une solution (format des niveaux), traduite geste par geste comme l'atelier la produirait.
   const rejouer = (n, sol) => {
@@ -375,12 +374,8 @@ console.log('Gestes de l\'atelier');
   });
 }
 
-console.log('Syntaxe des modules');
-for (const dossier of ['core', 'ui', 'ui/objet']) {
-  for (const f of readdirSync(racine + dossier).filter((x) => x.endsWith('.js'))) {
-    test(`${dossier}/${f}`, () => execFileSync(process.execPath, ['--check', racine + dossier + '/' + f], { stdio: 'pipe' }));
-  }
-}
+// La syntaxe des modules qui touchent au DOM (ui/app.js, ui/atelier.js…) se vérifie à part, hors de l'édition
+// publique : node tools/verifier-syntaxe.mjs (LOB7 refuse les sous-processus et les imports dynamiques dans les fichiers publiés).
 
 console.log(`\n${ok} réussis, ${ko} échoués`);
 process.exit(ko ? 1 : 0);

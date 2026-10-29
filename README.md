@@ -31,7 +31,7 @@ puis ouvrir <http://localhost:8123>. Résolution conseillée 1440 × 900, minimu
 node tests/run.mjs
 ```
 
-75 tests. Le noyau d'abord : analyse, substitution simultanée, modus ponens et diagnostics, boîtes, capsules,
+53 tests, plus la vérification de syntaxe de tous les modules (`node tools/verifier-syntaxe.mjs`, outil local). Le noyau d'abord : analyse, substitution simultanée, modus ponens et diagnostics, boîtes, capsules,
 journal et annulation, sauvegarde ; chaque solution de référence est rejouée, vérifiée, comptée, puis **dépliée
 jusqu'aux axiomes, débarrassée de la substitution et relue par le vérificateur indépendant** (portage de
 l'annexe B). Puis l'atelier :
@@ -82,8 +82,8 @@ ui/objet/    pose.js (formule → éléments posés, et relecture), rendu.js (SV
 ui/          app.js (coquille, sauvegarde, livraison), atelier.js (l'écran d'une commande), gestes.js
              (gestes → événements du journal), screens.js, i18n.js (fr, en), editor.js, audio.js, assets.js
 assets/      audio/ (ElevenLabs), fonts/, img/ (rendus Blender de Kimi K3.1 Pro, affichés s'ils sont là)
-tools/       pilote.mjs (Edge sans interface, pour rejouer des scénarios) ; les scripts Python de génération
-             (gen_audio.py, manifest.py) restent hors de l'édition publique : LOB7 n'accepte que les fichiers du jeu
+tools/       outils locaux, hors de l'édition publique (LOB7 n'accepte que les fichiers du jeu) : gen_audio.py,
+             manifest.py, pilote.mjs (Edge sans interface, pour rejouer des scénarios), verifier-syntaxe.mjs
 tests/       run.mjs
 ```
 

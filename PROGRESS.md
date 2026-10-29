@@ -36,7 +36,7 @@ jouets. Le noyau logique (`core/`) n'a pas changé ; l'interface (`ui/`) est ré
   daltonien étendu, mouvements réduits respectés, bouton Son (M).
 - **Revue** : une revue adversariale (quatre angles, un contradicteur par angle) a confirmé 57 points ; ils ont
   été corrigés, puis vérifiés un à un.
-- **Tests** : `node tests/run.mjs`, 75 tests ; scénarios de jeu réels (souris et clavier) rejoués dans Edge sans
+- **Tests** : `node tests/run.mjs` (53 tests) et `node tools/verifier-syntaxe.mjs` (syntaxe des 22 modules, outil local) ; scénarios de jeu réels (souris et clavier) rejoués dans Edge sans
   interface pendant le développement.
 - **Contre-revue** (le soir) : chaque correction a été revérifiée (32 tenaient, 25 partielles, 8 régressions). Les
   partielles et les régressions sont reprises, puis rejouées dans Edge : Espace tire le levier au lieu de relancer
