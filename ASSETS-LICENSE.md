@@ -10,8 +10,8 @@ Le code est sous licence MIT (`LICENSE`). Les médias ont les provenances suivan
   conditions d'ElevenLabs applicables à ce forfait au moment de la génération ; à vérifier avant toute
   publication commerciale.
 - **Détail** : chaque fichier, son prompt et sa date sont listés dans `assets/audio/provenance.json`.
-  Script : `tools/gen_audio.py` (`python tools/gen_audio.py atelier` pour les sons de l'atelier). Les fichiers
-  bruts restent hors du dépôt public.
+  Script : `tools/gen_audio.py` (`python tools/gen_audio.py atelier` pour les sons de l'atelier), gardé hors de
+  l'édition publique comme les fichiers bruts.
 
 ## Images
 

@@ -10,3 +10,5 @@ __pycache__/
 *.log
 .DS_Store
 Thumbs.db
+# Outils Python de développement : LOB7 n'accepte que les fichiers du jeu.
+tools/*.py
