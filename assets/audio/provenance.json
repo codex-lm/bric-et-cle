@@ -1,0 +1,338 @@
+[
+ {
+  "file": "mus_titre",
+  "tool": "ElevenLabs Music (music_v1)",
+  "prompt": "instrumental, no vocals, gentle chamber piece, felt piano, celesta, pizzicato strings, soft ticking clockwork percussion, curious and warm, 1920s study room, 84 BPM",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "mus_atelier",
+  "tool": "ElevenLabs Music (music_v1)",
+  "prompt": "instrumental, no vocals, calm focus loop, felt piano and marimba, light clockwork ticks, sparse, unhurried, thinking music, no drums, 80 BPM",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "mus_atelier_2",
+  "tool": "ElevenLabs Music (music_v1)",
+  "prompt": "instrumental, no vocals, focused loop with gentle forward motion, felt piano, celesta, pizzicato cello, soft mechanical rhythm, slightly more intricate, 90 BPM",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "mus_defi",
+  "tool": "ElevenLabs Music (music_v1)",
+  "prompt": "instrumental, no vocals, quiet tension, low strings drone, music box motif, ticking clock, patient and mysterious, 72 BPM",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "mus_victoire",
+  "tool": "ElevenLabs Music (music_v1)",
+  "prompt": "instrumental, no vocals, short triumphant sting, celesta and brass, warm resolution, ends cleanly",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_pose_a",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "small brass instrument set down on a wooden desk, soft thud",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_pose_b",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "small brass instrument set down on a wooden desk, soft thud",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_pose_c",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "small brass instrument set down on a wooden desk, soft thud",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_clic_a",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "metal plug snapping into a socket, crisp click",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_clic_b",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "metal plug snapping into a socket, crisp click",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_clic_c",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "metal plug snapping into a socket, crisp click",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_cran_a",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "single detent of a knurled brass dial turning one notch, tiny mechanical tick",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_cran_b",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "single detent of a knurled brass dial turning one notch, tiny mechanical tick",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_cran_c",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "single detent of a knurled brass dial turning one notch, tiny mechanical tick",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_manivelle",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "hand crank turning on a small copper machine, smooth ratchet",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_remplir",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "several small brass parts clicking into slots at the same instant",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_serrure",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "key turning in a brass lock, satisfying unlock click",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_tuyau_a",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "soft pneumatic puff, paper card sliding out of a slot",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_tuyau_b",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "soft pneumatic puff, paper card sliding out of a slot",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_bloque",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "key jamming in a lock, dull rattle, mechanism refusing",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_engrenages",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "small brass gears spinning behind glass, fine clockwork whir",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_capsule",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "soft magnetic snap, small capsule closing",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_fissure",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "thin glass capsule cracking open gently",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_loupe_a",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "quick paper flip, light swish",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_loupe_b",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "quick paper flip, light swish",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_cible",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "bright chime, a line completed on paper, single clear bell tone",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_pliage",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "large sheet of paper folded several times",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_gravure",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "engraving stylus on a metal plate, short scratch",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_etoile_a",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "rubber stamp pressed firmly on paper, single thump",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_etoile_b",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "rubber stamp pressed firmly on paper, single thump",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_etoile_c",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "rubber stamp pressed firmly on paper, single thump",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_couvercle",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "small blued steel box lid closing shut, soft metallic clack after a short hinge creak",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_clac_a",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "small brass spring-loaded latch snapping shut on a lacquered wooden toy, bright crisp clack",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_clac_b",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "small brass spring-loaded latch snapping shut on a lacquered wooden toy, bright crisp clack",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_declic",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "small brass latch released on a wooden toy, soft spring tick then a tiny metal rattle",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_goupille_a",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "tiny brass lock pin dropping into place, very short high metallic tick",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_goupille_b",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "tiny brass lock pin dropping into place, very short high metallic tick",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_goupille_c",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "tiny brass lock pin dropping into place, very short high metallic tick",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_pop",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "cork popping out of a small glass bottle, light playful pop",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_boing",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "small toy spring boing, short and dry, comic but subtle",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_vernis",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "short aerosol spray burst, soft pschht of varnish on wood",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_rivet",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "small hammer tapping a brass rivet once, short bright metallic tap",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_levier",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "wooden lever pulled down on a toy machine, solid chunky clack with a brief ratchet",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_aspire",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "small mechanical cradle grabbing a wooden toy, quick suction then a metal latch click",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_remontoir",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "tin toy wind-up key turned several times, tightening ratchet clicks, then a short clockwork whirr",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_velours",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "small wooden toy dropped into a padded velvet jewelry box, soft but clearly audible thud, close microphone",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_tampon",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "rubber stamp slammed on a cardboard tag, firm dry thump",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_domino_a",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "single small wooden domino tipping over onto another, tiny clack",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_domino_b",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "single small wooden domino tipping over onto another, tiny clack",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_domino_c",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "single small wooden domino tipping over onto another, tiny clack",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_rembobine",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "small tape spool rewinding quickly, light mechanical whirr",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_copeaux",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "handful of wood shavings swept into a bin, light dry rustle",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_rangement",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "wooden toy pieces swept off a workbench into a wooden box, gentle clatter",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_cloche",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "small brass desk bell, single clear ding",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_miroir",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "row of small wooden tiles flipping over in a quick cascade, light clatter",
+  "date": "2026-10-29"
+ },
+ {
+  "file": "sfx_dore",
+  "tool": "ElevenLabs sound-generation",
+  "prompt": "soft sparkling chime, tiny glockenspiel shimmer, warm and magical",
+  "date": "2026-10-29"
+ }
+]

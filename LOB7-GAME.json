@@ -1,0 +1,19 @@
+{
+  "title": "Bric & Clé",
+  "description": "Run a 1950s toy workshop: clients order strange objects made of lacquered pieces, brass diamonds and bars, and you build them with four moulds, a dial-driven Swapper, keys and wind-up tin automatons. Under the toy, every object is a logic formula and every gesture a proof step, checked by an independent verifier. Twelve orders and two open challenges. English by default, French available.",
+  "entrypoint": "index.html",
+  "license": "MIT",
+  "genre": ["Puzzle", "Programming"],
+  "themes": ["Patterns", "Factory", "Relaxing"],
+  "controls": [
+    "Mouse or touch: drag an object by its base onto the Swapper, a dial, a cradle or a lock; click a piece to fill the armed dial; click an arrow to flip or unbox it.",
+    "Keyboard: Tab between objects, Enter to pick; E Swapper, K key, D Duplicator, N box, L flip arrow; Space pulls the lever; Ctrl+Z undo; Escape drops; H shows Hortense's notes; M mutes.",
+    "Settings: language, day or evening theme, colour-blind mode, animation speed and interface size."
+  ],
+  "credits": [
+    "Cédric Bernadac — game design, after his course “Logique — livre I” (version 10).",
+    "Developed with AI assistance (Claude). Objects drawn by code.",
+    "Automatons, wood, velvet, rivets and title screen rendered in Blender by Kimi K3.1 Pro, CC0-1.0. Music and sound effects generated with ElevenLabs. Media provenance: ASSETS-LICENSE.md.",
+    "STIX Two Text and STIX Two Math (The STIX Fonts Project) and IBM Plex Sans (IBM): SIL Open Font License 1.1."
+  ]
+}

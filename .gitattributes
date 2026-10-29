@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.woff2 binary
+*.ogg binary
+*.mp3 binary
+*.png binary
+assets/fonts/OFL-*.txt -text

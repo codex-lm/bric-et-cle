@@ -1,0 +1,12 @@
+# Documents de travail qui ne sont pas publiés : le cours et les spécifications.
+SPEC-grande-feuille.md
+La Grande Feuille — spécification du jeu.md
+Logique_Godement_v10_livre_I.md
+docs/Logique_Godement_v10_livre_I.md
+# Fichiers bruts de génération audio et réglages locaux.
+assets/audio/raw/
+.claude/
+__pycache__/
+*.log
+.DS_Store
+Thumbs.db

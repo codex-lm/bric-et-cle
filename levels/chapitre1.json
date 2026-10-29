@@ -1,0 +1,1292 @@
+{
+ "chapitre": 1,
+ "titre": {
+  "fr": "La feuille 1",
+  "en": "Sheet 1"
+ },
+ "theoremes": {
+  "TL0": {
+   "enonce": "(S -> T) -> ((R -> S) -> (R -> T))",
+   "ports": 2,
+   "nom": {
+    "fr": "TL0",
+    "en": "TL0"
+   },
+   "boite": {
+    "fr": "TL1",
+    "en": "TL1"
+   },
+   "surnom": {
+    "fr": "le Relais",
+    "en": "the Relay"
+   }
+  },
+  "TL2": {
+   "enonce": "R -> R",
+   "ports": 1,
+   "nom": {
+    "fr": "TL2",
+    "en": "TL2"
+   },
+   "boite": null,
+   "surnom": {
+    "fr": "le Reflet",
+    "en": "the Reflection"
+   }
+  },
+  "CV": {
+   "enonce": "R -> (S -> R)",
+   "ports": 1,
+   "nom": {
+    "fr": "CV",
+    "en": "CV"
+   },
+   "boite": {
+    "fr": "CV méta",
+    "en": "CV meta"
+   },
+   "surnom": {
+    "fr": "le Porte-tout",
+    "en": "the Carry-all"
+   }
+  },
+  "AF": {
+   "enonce": "~R -> (R -> S)",
+   "ports": 1,
+   "nom": {
+    "fr": "AF",
+    "en": "AF"
+   },
+   "boite": {
+    "fr": "AF méta",
+    "en": "AF meta"
+   },
+   "surnom": {
+    "fr": "le Farfelu",
+    "en": "the Whimsy"
+   }
+  },
+  "S": {
+   "enonce": "(R -> (S -> T)) -> ((R -> S) -> (R -> T))",
+   "ports": 2,
+   "nom": {
+    "fr": "S",
+    "en": "S"
+   },
+   "boite": {
+    "fr": "S méta",
+    "en": "S meta"
+   },
+   "surnom": {
+    "fr": "la Fourche",
+    "en": "the Fork"
+   }
+  },
+  "C": {
+   "enonce": "(A -> (B -> C)) -> (B -> (A -> C))",
+   "ports": 1,
+   "nom": {
+    "fr": "C",
+    "en": "C"
+   },
+   "boite": {
+    "fr": "C méta",
+    "en": "C meta"
+   },
+   "surnom": {
+    "fr": "le Croiseur",
+    "en": "the Crosser"
+   }
+  },
+  "MPI": {
+   "enonce": "C -> ((C -> B) -> B)",
+   "ports": 1,
+   "nom": {
+    "fr": "MPI",
+    "en": "MPI"
+   },
+   "boite": {
+    "fr": "MPI méta",
+    "en": "MPI meta"
+   },
+   "surnom": {
+    "fr": "le Portier",
+    "en": "the Doorman"
+   }
+  },
+  "TL0bis": {
+   "enonce": "(R -> S) -> ((S -> T) -> (R -> T))",
+   "ports": 2,
+   "nom": {
+    "fr": "TL0 bis",
+    "en": "TL0 bis"
+   },
+   "boite": {
+    "fr": "TL1 bis",
+    "en": "TL1 bis"
+   },
+   "surnom": {
+    "fr": "le Relais à rebours",
+    "en": "the Backward Relay"
+   }
+  },
+  "LPC": {
+   "enonce": "(~R -> X) -> ((R -> X) -> X)",
+   "ports": 2,
+   "nom": {
+    "fr": "Lemme par cas",
+    "en": "Cases lemma"
+   },
+   "boite": {
+    "fr": "Cas méta",
+    "en": "Cases meta"
+   },
+   "surnom": {
+    "fr": "le Juge",
+    "en": "the Judge"
+   }
+  }
+ },
+ "regles": {
+  "prelemme": {
+   "premisses": [
+    "~R -> X"
+   ],
+   "conclusion": "(R -> X) -> X",
+   "noms": [
+    "R",
+    "X"
+   ],
+   "nom": {
+    "fr": "Prélemme",
+    "en": "Pre-lemma"
+   },
+   "niveau": "prelemme",
+   "surnom": {
+    "fr": "le Préjugé",
+    "en": "the Prejudice"
+   }
+  }
+ },
+ "niveaux": [
+  {
+   "id": "i1",
+   "numero": "I1",
+   "titre": {
+    "fr": "Initiation : Substituer",
+    "en": "Training: Substitute"
+   },
+   "enseigne": {
+    "fr": "Une molette remplit tous les R d'un coup.",
+    "en": "One dial fills every R at once."
+   },
+   "cible": "((S v T) v (S v T)) -> (S v T)",
+   "haut": [
+    "AL1",
+    "AL2",
+    "AL3",
+    "AL4"
+   ],
+   "inventaire": [
+    "substituer"
+   ],
+   "debloque": null,
+   "par": 1,
+   "troisEtoiles": null,
+   "musique": "mus_atelier",
+   "reference": [
+    {
+     "substituer": "AL1",
+     "sigma": {
+      "R": "S v T"
+     }
+    }
+   ],
+   "atelier": {
+    "client": {
+     "fr": "M. Grumeau, horloger",
+     "en": "Mr Grumeau, clockmaker"
+    },
+    "replique": {
+     "fr": "Pour caler ma pendule. Pile-poil, je vous prie.",
+     "en": "To steady my clock. Spot on, please."
+    }
+   }
+  },
+  {
+   "id": "i2",
+   "numero": "I2",
+   "titre": {
+    "fr": "Initiation : MP",
+    "en": "Training: MP"
+   },
+   "enseigne": {
+    "fr": "La clé dans la serrure : A et A → B donnent B.",
+    "en": "Key in the lock: A and A → B give B."
+   },
+   "cible": "((R v R) -> R) v S",
+   "haut": [
+    "AL1",
+    "AL2",
+    "AL3",
+    "AL4"
+   ],
+   "inventaire": [
+    "substituer",
+    "mp"
+   ],
+   "debloque": null,
+   "par": 2,
+   "troisEtoiles": null,
+   "musique": "mus_atelier",
+   "reference": [
+    {
+     "substituer": "AL2",
+     "sigma": {
+      "R": "(R v R) -> R"
+     }
+    },
+    {
+     "mp": [
+      "AL1",
+      1
+     ]
+    }
+   ],
+   "atelier": {
+    "client": {
+     "fr": "Mme Vernoux, antiquaire",
+     "en": "Mrs Vernoux, antique dealer"
+    },
+    "replique": {
+     "fr": "Le Doublé, avec un cube accroché derrière. Et qu'il fasse clic.",
+     "en": "The Double, with a cube hooked behind. And make it click."
+    }
+   }
+  },
+  {
+   "id": "tl0",
+   "numero": "1",
+   "titre": {
+    "fr": "TL0, transitivité",
+    "en": "TL0, transitivity"
+   },
+   "enseigne": {
+    "fr": "S ∨ ¬R, c'est R → S : la même formule, deux lectures.",
+    "en": "S ∨ ¬R is R → S: one formula, two readings."
+   },
+   "cible": "(S -> T) -> ((R -> S) -> (R -> T))",
+   "haut": [
+    "AL1",
+    "AL2",
+    "AL3",
+    "AL4"
+   ],
+   "inventaire": [
+    "copier",
+    "substituer",
+    "mp"
+   ],
+   "debloque": {
+    "theoreme": "TL0"
+   },
+   "par": 1,
+   "troisEtoiles": null,
+   "musique": "mus_atelier",
+   "reference": [
+    {
+     "substituer": "AL4",
+     "sigma": {
+      "R": "S",
+      "S": "T",
+      "T": "~R"
+     }
+    }
+   ],
+   "atelier": {
+    "client": {
+     "fr": "Le colonel Patin",
+     "en": "Colonel Patin"
+    },
+    "replique": {
+     "fr": "Un relais : si l'un mène à l'autre, et l'autre au suivant… Je compte sur vous.",
+     "en": "A relay: if one leads to the next, and the next to another… I'm counting on you."
+    }
+   }
+  },
+  {
+   "id": "tl2",
+   "numero": "2",
+   "titre": {
+    "fr": "TL2, réflexivité",
+    "en": "TL2, reflexivity"
+   },
+   "enseigne": {
+    "fr": "Une boîte trouve seule ses réglages.",
+    "en": "A box finds its own settings."
+   },
+   "cible": "R -> R",
+   "haut": [
+    "AL1",
+    "AL2",
+    "AL3",
+    "AL4",
+    "TL0"
+   ],
+   "inventaire": [
+    "copier",
+    "substituer",
+    "mp",
+    "boite:TL0"
+   ],
+   "debloque": {
+    "theoreme": "TL2"
+   },
+   "par": 2,
+   "troisEtoiles": null,
+   "musique": "mus_atelier",
+   "reference": [
+    {
+     "substituer": "AL2",
+     "sigma": {
+      "S": "R"
+     }
+    },
+    {
+     "boite": "TL0",
+     "entrees": [
+      "AL1",
+      1
+     ]
+    }
+   ],
+   "atelier": {
+    "client": {
+     "fr": "Mlle Ondine, miroitière",
+     "en": "Miss Ondine, mirror maker"
+    },
+    "replique": {
+     "fr": "Une flèche qui rend ce qu'on lui donne. Rien de plus.",
+     "en": "An arrow that gives back what it gets. Nothing more."
+    }
+   }
+  },
+  {
+   "id": "cv",
+   "numero": "3",
+   "titre": {
+    "fr": "CV, conséquent vrai",
+    "en": "CV, true consequent"
+   },
+   "enseigne": {
+    "fr": "On peut visser une négation dans une molette.",
+    "en": "A dial can take a negation."
+   },
+   "cible": "R -> (S -> R)",
+   "haut": [
+    "AL1",
+    "AL2",
+    "AL3",
+    "AL4",
+    "TL0",
+    "TL2"
+   ],
+   "inventaire": [
+    "copier",
+    "substituer",
+    "mp",
+    "boite:TL0"
+   ],
+   "debloque": {
+    "theoreme": "CV"
+   },
+   "par": 1,
+   "troisEtoiles": null,
+   "musique": "mus_atelier",
+   "reference": [
+    {
+     "substituer": "AL2",
+     "sigma": {
+      "S": "~S"
+     }
+    }
+   ],
+   "atelier": {
+    "client": {
+     "fr": "Me Lambert, notaire",
+     "en": "Mr Lambert, notary"
+    },
+    "replique": {
+     "fr": "Quoi qu'on y ajoute, ça doit tenir.",
+     "en": "Whatever you add to it, it must hold."
+    }
+   }
+  },
+  {
+   "id": "af",
+   "numero": "4",
+   "titre": {
+    "fr": "AF, antécédent faux",
+    "en": "AF, false antecedent"
+   },
+   "enseigne": {
+    "fr": "Deux substitutions, puis TL1 les raccorde.",
+    "en": "Two substitutions, then TL1 joins them."
+   },
+   "cible": "~R -> (R -> S)",
+   "haut": [
+    "AL1",
+    "AL2",
+    "AL3",
+    "AL4",
+    "TL0",
+    "TL2",
+    "CV"
+   ],
+   "inventaire": [
+    "copier",
+    "substituer",
+    "mp",
+    "boite:TL0",
+    "boite:CV"
+   ],
+   "debloque": {
+    "theoreme": "AF"
+   },
+   "par": 3,
+   "troisEtoiles": null,
+   "musique": "mus_atelier",
+   "reference": [
+    {
+     "substituer": "AL2",
+     "sigma": {
+      "R": "~R"
+     }
+    },
+    {
+     "substituer": "AL3",
+     "sigma": {
+      "R": "~R"
+     }
+    },
+    {
+     "boite": "TL0",
+     "entrees": [
+      2,
+      1
+     ]
+    }
+   ],
+   "atelier": {
+    "client": {
+     "fr": "M. Fadet, prestidigitateur",
+     "en": "Mr Fadet, conjurer"
+    },
+    "replique": {
+     "fr": "Un tour où l'impossible ouvre toutes les portes.",
+     "en": "A trick where the impossible opens every door."
+    }
+   }
+  },
+  {
+   "id": "prelemme",
+   "numero": "5",
+   "titre": {
+    "fr": "Prélemme par cas (règle)",
+    "en": "Cases pre-lemma (rule)"
+   },
+   "enseigne": {
+    "fr": "Une prémisse figée : ses noms n'ont pas de douille.",
+    "en": "A frozen premise: its names have no socket."
+   },
+   "cible": "(R -> X) -> X",
+   "noms": [
+    "R",
+    "X"
+   ],
+   "premisses": [
+    "~R -> X"
+   ],
+   "haut": [
+    "AL1",
+    "AL2",
+    "AL3",
+    "AL4",
+    "TL0",
+    "TL2",
+    "CV",
+    "AF",
+    "P1"
+   ],
+   "inventaire": [
+    "copier",
+    "substituer",
+    "mp",
+    "boite:TL0",
+    "boite:CV",
+    "boite:AF"
+   ],
+   "debloque": {
+    "regle": "prelemme"
+   },
+   "par": 6,
+   "troisEtoiles": null,
+   "musique": "mus_atelier_2",
+   "reference": [
+    {
+     "substituer": "AL4",
+     "sigma": {
+      "R": "~R",
+      "S": "X",
+      "T": "X"
+     }
+    },
+    {
+     "mp": [
+      "P1",
+      1
+     ]
+    },
+    {
+     "substituer": "AL3",
+     "sigma": {
+      "R": "X",
+      "S": "~R"
+     }
+    },
+    {
+     "boite": "TL0",
+     "entrees": [
+      2,
+      3
+     ]
+    },
+    {
+     "substituer": "AL1",
+     "sigma": {
+      "R": "X"
+     }
+    },
+    {
+     "boite": "TL0",
+     "entrees": [
+      5,
+      4
+     ]
+    }
+   ],
+   "atelier": {
+    "client": {
+     "fr": "Mme Cassagne, juge de paix",
+     "en": "Mrs Cassagne, justice of the peace"
+    },
+    "replique": {
+     "fr": "Une règle scellée. Le plomb ne s'échange pas.",
+     "en": "A sealed rule. Lead cannot be swapped."
+    }
+   }
+  },
+  {
+   "id": "s",
+   "numero": "6",
+   "titre": {
+    "fr": "Schéma S",
+    "en": "Scheme S"
+   },
+   "enseigne": {
+    "fr": "Nommer un morceau ne coûte rien. Une lettre se remplace, un nom non.",
+    "en": "Naming a piece is free. A letter can be replaced, a name cannot."
+   },
+   "cible": "(R -> (S -> T)) -> ((R -> S) -> (R -> T))",
+   "haut": [
+    "AL1",
+    "AL2",
+    "AL3",
+    "AL4",
+    "TL0",
+    "TL2",
+    "CV",
+    "AF"
+   ],
+   "inventaire": [
+    "copier",
+    "substituer",
+    "mp",
+    "boite:TL0",
+    "boite:CV",
+    "boite:AF",
+    "regle:prelemme"
+   ],
+   "debloque": {
+    "theoreme": "S"
+   },
+   "par": 7,
+   "troisEtoiles": null,
+   "musique": "mus_atelier_2",
+   "capsules": {
+    "X": "(R -> S) -> (R -> T)"
+   },
+   "reference": [
+    {
+     "substituer": "TL0",
+     "sigma": {
+      "S": "S -> T",
+      "T": "(R -> S) -> (R -> T)"
+     }
+    },
+    {
+     "mp": [
+      "TL0",
+      1
+     ]
+    },
+    {
+     "substituer": "AF",
+     "sigma": {
+      "S": "T"
+     }
+    },
+    {
+     "substituer": "CV",
+     "sigma": {
+      "R": "R -> T",
+      "S": "R -> S"
+     }
+    },
+    {
+     "boite": "TL0",
+     "entrees": [
+      4,
+      3
+     ]
+    },
+    {
+     "regle": "prelemme",
+     "entrees": [
+      5
+     ]
+    },
+    {
+     "boite": "TL0",
+     "entrees": [
+      6,
+      2
+     ]
+    }
+   ],
+   "atelier": {
+    "client": {
+     "fr": "M. Bastide, aiguilleur",
+     "en": "Mr Bastide, signalman"
+    },
+    "replique": {
+     "fr": "Une fourche qui envoie la même chose des deux côtés.",
+     "en": "A fork that sends the same thing both ways."
+    }
+   }
+  },
+  {
+   "id": "c",
+   "numero": "7",
+   "titre": {
+    "fr": "Combinateur C",
+    "en": "Combinator C"
+   },
+   "enseigne": {
+    "fr": "Une grosse instance se lit en capsules.",
+    "en": "A big instance reads best in capsules."
+   },
+   "cible": "(A -> (B -> C)) -> (B -> (A -> C))",
+   "haut": [
+    "AL1",
+    "AL2",
+    "AL3",
+    "AL4",
+    "TL0",
+    "TL2",
+    "CV",
+    "AF",
+    "S"
+   ],
+   "inventaire": [
+    "copier",
+    "substituer",
+    "mp",
+    "boite:TL0",
+    "boite:CV",
+    "boite:AF",
+    "regle:prelemme",
+    "boite:S"
+   ],
+   "debloque": {
+    "theoreme": "C"
+   },
+   "par": 8,
+   "troisEtoiles": null,
+   "musique": "mus_atelier_2",
+   "reference": [
+    {
+     "substituer": "S",
+     "sigma": {
+      "R": "A",
+      "S": "B",
+      "T": "C"
+     }
+    },
+    {
+     "substituer": "CV",
+     "sigma": {
+      "R": "B",
+      "S": "A"
+     }
+    },
+    {
+     "substituer": "TL0",
+     "sigma": {
+      "R": "B",
+      "S": "A -> B",
+      "T": "A -> C"
+     }
+    },
+    {
+     "boite": "TL0",
+     "entrees": [
+      3,
+      1
+     ]
+    },
+    {
+     "substituer": "S",
+     "sigma": {
+      "R": "A -> (B -> C)",
+      "S": "B -> (A -> B)",
+      "T": "B -> (A -> C)"
+     }
+    },
+    {
+     "mp": [
+      4,
+      5
+     ]
+    },
+    {
+     "boite": "CV",
+     "entrees": [
+      2
+     ],
+     "molettes": {
+      "S": "A -> (B -> C)"
+     }
+    },
+    {
+     "mp": [
+      7,
+      6
+     ]
+    }
+   ],
+   "atelier": {
+    "client": {
+     "fr": "Mlle Carrel, couturière",
+     "en": "Miss Carrel, seamstress"
+    },
+    "replique": {
+     "fr": "Deux fils croisés, sans un nœud.",
+     "en": "Two crossed threads, without a knot."
+    }
+   }
+  },
+  {
+   "id": "mpi",
+   "numero": "8",
+   "titre": {
+    "fr": "MPI, modus ponens internalisé",
+    "en": "MPI, internalised modus ponens"
+   },
+   "enseigne": {
+    "fr": "A := C → B, B := C, C := B, en même temps.",
+    "en": "A := C → B, B := C, C := B, all at once."
+   },
+   "cible": "C -> ((C -> B) -> B)",
+   "haut": [
+    "AL1",
+    "AL2",
+    "AL3",
+    "AL4",
+    "TL0",
+    "TL2",
+    "CV",
+    "AF",
+    "S",
+    "C"
+   ],
+   "inventaire": [
+    "copier",
+    "substituer",
+    "mp",
+    "boite:TL0",
+    "boite:CV",
+    "boite:AF",
+    "regle:prelemme",
+    "boite:S",
+    "boite:C"
+   ],
+   "debloque": {
+    "theoreme": "MPI"
+   },
+   "par": 3,
+   "troisEtoiles": 2,
+   "musique": "mus_atelier_2",
+   "reference": [
+    {
+     "substituer": "TL2",
+     "sigma": {
+      "R": "C -> B"
+     }
+    },
+    {
+     "substituer": "C",
+     "sigma": {
+      "A": "C -> B",
+      "B": "C",
+      "C": "B"
+     }
+    },
+    {
+     "mp": [
+      1,
+      2
+     ]
+    }
+   ],
+   "referenceTrois": [
+    {
+     "substituer": "TL2",
+     "sigma": {
+      "R": "C -> B"
+     }
+    },
+    {
+     "boite": "C",
+     "entrees": [
+      1
+     ]
+    }
+   ],
+   "atelier": {
+    "client": {
+     "fr": "M. Portal, concierge",
+     "en": "Mr Portal, concierge"
+    },
+    "replique": {
+     "fr": "Le portier ouvre ce qu'on lui confie, dans l'ordre qu'on veut.",
+     "en": "The doorman opens what you entrust to him, in any order."
+    }
+   }
+  },
+  {
+   "id": "tl0bis",
+   "numero": "9",
+   "titre": {
+    "fr": "TL0 bis, transitivité inverse",
+    "en": "TL0 bis, reverse transitivity"
+   },
+   "enseigne": {
+    "fr": "C appliqué à un théorème le retourne.",
+    "en": "C applied to a theorem turns it around."
+   },
+   "cible": "(R -> S) -> ((S -> T) -> (R -> T))",
+   "haut": [
+    "AL1",
+    "AL2",
+    "AL3",
+    "AL4",
+    "TL0",
+    "TL2",
+    "CV",
+    "AF",
+    "S",
+    "C",
+    "MPI"
+   ],
+   "inventaire": [
+    "copier",
+    "substituer",
+    "mp",
+    "boite:TL0",
+    "boite:CV",
+    "boite:AF",
+    "regle:prelemme",
+    "boite:S",
+    "boite:C",
+    "boite:MPI"
+   ],
+   "debloque": {
+    "theoreme": "TL0bis"
+   },
+   "par": 2,
+   "troisEtoiles": 1,
+   "musique": "mus_atelier_2",
+   "reference": [
+    {
+     "substituer": "C",
+     "sigma": {
+      "A": "S -> T",
+      "B": "R -> S",
+      "C": "R -> T"
+     }
+    },
+    {
+     "mp": [
+      "TL0",
+      1
+     ]
+    }
+   ],
+   "referenceTrois": [
+    {
+     "boite": "C",
+     "entrees": [
+      "TL0"
+     ]
+    }
+   ],
+   "atelier": {
+    "client": {
+     "fr": "Le colonel Patin",
+     "en": "Colonel Patin"
+    },
+    "replique": {
+     "fr": "Mon relais, mais à rebours, s'il vous plaît.",
+     "en": "My relay, but backwards, please."
+    }
+   }
+  },
+  {
+   "id": "lpc",
+   "numero": "10",
+   "titre": {
+    "fr": "Lemme par cas",
+    "en": "Proof by cases"
+   },
+   "enseigne": {
+    "fr": "Une boîte à moitié branchée rend une implication.",
+    "en": "A half-plugged box returns an implication."
+   },
+   "cible": "(~R -> X) -> ((R -> X) -> X)",
+   "haut": [
+    "AL1",
+    "AL2",
+    "AL3",
+    "AL4",
+    "TL0",
+    "TL2",
+    "CV",
+    "AF",
+    "S",
+    "C",
+    "MPI",
+    "TL0bis"
+   ],
+   "inventaire": [
+    "copier",
+    "substituer",
+    "mp",
+    "boite:TL0",
+    "boite:CV",
+    "boite:AF",
+    "regle:prelemme",
+    "boite:S",
+    "boite:C",
+    "boite:MPI",
+    "boite:TL0bis"
+   ],
+   "debloque": {
+    "theoreme": "LPC"
+   },
+   "par": 9,
+   "troisEtoiles": 7,
+   "musique": "mus_atelier_2",
+   "reference": [
+    {
+     "substituer": "AL4",
+     "sigma": {
+      "R": "~R",
+      "S": "X",
+      "T": "X"
+     }
+    },
+    {
+     "substituer": "AL1",
+     "sigma": {
+      "R": "X"
+     }
+    },
+    {
+     "substituer": "TL0",
+     "sigma": {
+      "R": "~R v X",
+      "S": "X v X",
+      "T": "X"
+     }
+    },
+    {
+     "mp": [
+      2,
+      3
+     ]
+    },
+    {
+     "boite": "TL0",
+     "entrees": [
+      4,
+      1
+     ]
+    },
+    {
+     "substituer": "AL3",
+     "sigma": {
+      "R": "X",
+      "S": "~R"
+     }
+    },
+    {
+     "substituer": "TL0bis",
+     "sigma": {
+      "R": "X v ~R",
+      "S": "~R v X",
+      "T": "X"
+     }
+    },
+    {
+     "mp": [
+      6,
+      7
+     ]
+    },
+    {
+     "boite": "TL0",
+     "entrees": [
+      8,
+      5
+     ]
+    }
+   ],
+   "referenceTrois": [
+    {
+     "substituer": "AL4",
+     "sigma": {
+      "R": "~R",
+      "S": "X",
+      "T": "X"
+     }
+    },
+    {
+     "substituer": "AL1",
+     "sigma": {
+      "R": "X"
+     }
+    },
+    {
+     "boite": "TL0",
+     "entrees": [
+      2
+     ],
+     "molettes": {
+      "R": "~R v X"
+     }
+    },
+    {
+     "boite": "TL0",
+     "entrees": [
+      3,
+      1
+     ]
+    },
+    {
+     "substituer": "AL3",
+     "sigma": {
+      "R": "X",
+      "S": "~R"
+     }
+    },
+    {
+     "boite": "TL0bis",
+     "entrees": [
+      5
+     ],
+     "molettes": {
+      "T": "X"
+     }
+    },
+    {
+     "boite": "TL0",
+     "entrees": [
+      6,
+      4
+     ]
+    }
+   ],
+   "atelier": {
+    "client": {
+     "fr": "Mme Cassagne, juge de paix",
+     "en": "Mrs Cassagne, justice of the peace"
+    },
+    "replique": {
+     "fr": "Les deux cas mènent au même verdict. Jugez-en.",
+     "en": "Both cases lead to the same verdict. Judge for yourself."
+    }
+   }
+  },
+  {
+   "id": "d1",
+   "numero": "D1",
+   "defi": true,
+   "titre": {
+    "fr": "Défi : 5ᵉ axiome des Principia",
+    "en": "Challenge: 5th axiom of the Principia"
+   },
+   "enseigne": {
+    "fr": "Bernays l'a montré superflu en 1926. Une preuve courte reste à trouver.",
+    "en": "Bernays showed it redundant in 1926. A short proof is still to be found."
+   },
+   "cible": "(R v (S v T)) -> (S v (R v T))",
+   "haut": [
+    "AL1",
+    "AL2",
+    "AL3",
+    "AL4",
+    "TL0",
+    "TL2",
+    "CV",
+    "AF",
+    "S",
+    "C",
+    "MPI",
+    "TL0bis",
+    "LPC"
+   ],
+   "inventaire": [
+    "copier",
+    "substituer",
+    "mp",
+    "boite:TL0",
+    "boite:CV",
+    "boite:AF",
+    "regle:prelemme",
+    "boite:S",
+    "boite:C",
+    "boite:MPI",
+    "boite:TL0bis",
+    "boite:LPC"
+   ],
+   "debloque": null,
+   "par": null,
+   "troisEtoiles": null,
+   "musique": "mus_defi",
+   "atelier": {
+    "client": {
+     "fr": "",
+     "en": ""
+    },
+    "replique": {
+     "fr": "Le cinquième. Ceux qui savent sauront.",
+     "en": "The fifth. Those who know will know."
+    }
+   }
+  },
+  {
+   "id": "d2",
+   "numero": "D2",
+   "defi": true,
+   "titre": {
+    "fr": "Défi : loi de Peirce",
+    "en": "Challenge: Peirce's law"
+   },
+   "enseigne": {
+    "fr": "Le cours n'en donne pas de preuve à la main.",
+    "en": "The course gives no hand-written proof."
+   },
+   "cible": "((R -> S) -> R) -> R",
+   "haut": [
+    "AL1",
+    "AL2",
+    "AL3",
+    "AL4",
+    "TL0",
+    "TL2",
+    "CV",
+    "AF",
+    "S",
+    "C",
+    "MPI",
+    "TL0bis",
+    "LPC"
+   ],
+   "inventaire": [
+    "copier",
+    "substituer",
+    "mp",
+    "boite:TL0",
+    "boite:CV",
+    "boite:AF",
+    "regle:prelemme",
+    "boite:S",
+    "boite:C",
+    "boite:MPI",
+    "boite:TL0bis",
+    "boite:LPC"
+   ],
+   "debloque": null,
+   "par": null,
+   "troisEtoiles": null,
+   "musique": "mus_defi",
+   "solutionConnue": [
+    {
+     "boite": "TL0bis",
+     "entrees": [
+      "AF"
+     ],
+     "molettes": {
+      "T": "R"
+     }
+    },
+    {
+     "substituer": "LPC",
+     "sigma": {
+      "X": "R"
+     }
+    },
+    {
+     "boite": "C",
+     "entrees": [
+      2
+     ]
+    },
+    {
+     "mp": [
+      "TL2",
+      3
+     ]
+    },
+    {
+     "boite": "TL0",
+     "entrees": [
+      4,
+      1
+     ]
+    }
+   ],
+   "atelier": {
+    "client": {
+     "fr": "",
+     "en": ""
+    },
+    "replique": {
+     "fr": "Celui qui revient toujours.",
+     "en": "The one that always comes back."
+    }
+   }
+  }
+ ]
+}
